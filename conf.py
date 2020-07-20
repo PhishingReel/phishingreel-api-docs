@@ -14,7 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_rtd_theme
-import sphinxcontrib.httpdomain
+import sphinxcontrib-httpdomain
 
 
 # -- Project information -----------------------------------------------------
