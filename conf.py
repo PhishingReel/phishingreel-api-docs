@@ -30,7 +30,8 @@ author = 'Jimmy 2-Beans'
 # ones.
 extensions = [
     "sphinxcontrib.httpdomain",
-    "sphinx_rtd_theme"
+    "sphinx_rtd_theme",
+    "sphinx_tabs.tabs"
 ]
 
 # Add any paths that contain templates here, relative to this directory.
