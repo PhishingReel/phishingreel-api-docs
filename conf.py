@@ -29,6 +29,7 @@ author = 'Jimmy 2-Beans'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinxcontrib.httpdomain",
     "sphinx_rtd_theme"
 ]
 
