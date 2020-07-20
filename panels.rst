@@ -13,7 +13,7 @@ Authentication and authorisation
 Requests to the detections endpoint do not require authentication or authorisation.
 
 Date
-~~~~~~
+++++
 
 .. http:get:: /api/v1/panels?date=<datestring>
     
@@ -29,7 +29,7 @@ Date
 
 
 Today
-~~~~~~
+++++
 
 .. http:get:: /api/v1/panels/today
     
