@@ -4,7 +4,7 @@
    contain the root `toctree` directive.
 
 Welcome to PhishingReel's API documentation!
-========================================
+============================================
 
 PhishingReel is a bot which scans and detects Phishing sites and admin panels, mainly focusing on commercial "Phish as a service" type kits. (E.g. 16Shop, HijaIyh).
 The API is free to use to get a list of detections for the given date.
