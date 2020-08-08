@@ -16,6 +16,10 @@ Today
 -----
 
 .. http:get:: /api/v1/panels/today
+
+    .. warning::
+
+        This API call will be removed in a later update in favour of calling "/api/v1/panels?range=today"
     
     Retrieve all panel detections for the current date.
 
