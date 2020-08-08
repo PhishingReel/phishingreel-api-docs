@@ -12,24 +12,8 @@ Authentication and authorisation
 
 Requests to the detections endpoint do not require authentication or authorisation.
 
-Date
-----
-
-.. http:get:: /api/v1/panels?date=<datestring>
-    
-    Retrieve all panel detections for the provided date in YYYYMMdd format.
-
-    **Example request**
-
-    .. tabs::
-
-        .. code-tab:: bash
-
-            $ curl https://phishingreel.io/api/v1/panels?date=20200705
-
-
 Today
-----
+-----
 
 .. http:get:: /api/v1/panels/today
     
@@ -71,5 +55,73 @@ Today
             "fingerprint": "46:CE:52:B8:E6:26:35:D8:DA:F5:F7:68:44:52:7A:B3:98:93:93:E0"
             }
         }
+
+
+Date
+----
+
+.. http:get:: /api/v1/panels?date=<datestring>
+    
+    Retrieve all panel detections for the provided date in YYYYmmdd format.
+
+    **Example request**
+
+    .. tabs::
+
+        .. code-tab:: bash
+
+            $ curl https://phishingreel.io/api/v1/panels?date=20200705
+
+Start and End Timestamps
+------------------------
+
+.. http:get:: /api/v1/panels?start=<timestamp>&end=<timestamp>
+
+    Retrieve all panel detections for between the provided timestamps in YYYYmmdd-HHMMSS format.
+
+    **Example request**
+
+    .. tabs::
+
+        .. code-tab:: bash
+
+            $ curl https://phishingreel.io/api/v1/panels?start=20200723-000000&end=20200723-080000
+
+Start and End UNIX Timestamps
+-----------------------------
+
+.. http:get:: /api/v1/panels?start=<unixtimestamp>&end=<unixtimestamp>
+
+    Retrieve all panel detections for between the provided UNIX Epoch timestamps.
+
+    **Example request**
+
+    .. tabs::
+
+        .. code-tab:: bash
+
+            $ curl https://phishingreel.io/api/v1/panels?start=1595462400&end=1595491200
+
+Range Keyword
+-------------
+
+.. http:get:: /api/v1/panels?range=<keyword>
+
+    Retrieve all panel detections for a given range using one of the following keywords:
+
+    * today
+    * yesterday
+    * thisweek
+    * lastweek
+    * thismonth
+    * lastmonth
+
+    **Example request**
+
+    .. tabs::
+
+        .. code-tab:: bash
+
+            $ curl https://phishingreel.io/api/v1/panels?range=thisweek
 
 
